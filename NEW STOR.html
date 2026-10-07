@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4FLAG CHEATS - Premium Gaming Solutions</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Orbitron & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@500;700;800;900&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cyber: {
+              black: '#08080c',
+              dark: '#0e0f17',
+              card: 'rgba(18, 20, 32, 0.7)',
+              border: 'rgba(0, 240, 255, 0.15)',
+              cyan: '#00f0ff',
+              magenta: '#ff0055',
+              green: '#00ff66',
+              purple: '#8a2be2',
+              gold: '#ffd700'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Orbitron', 'sans-serif'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'glow-cyan': 'glowCyan 2s infinite alternate',
+            'float': 'float 6s ease-in-out infinite',
+            'slide-up': 'slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'fade-in': 'fadeIn 0.2s ease-out forwards'
+          },
+          keyframes: {
+            glowCyan: {
+              '0%': { boxShadow: '0 0 10px rgba(0, 240, 255, 0.2), inset 0 0 5px rgba(0, 240, 255, 0.1)' },
+              '100%': { boxShadow: '0 0 25px rgba(0, 240, 255, 0.6), inset 0 0 15px rgba(0, 240, 255, 0.3)' }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #08080c;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e2235;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 240, 255, 0.2);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00f0ff;
+    }
+
+    /* Custom Glassmorphism Styles */
+    .glass-panel {
+      background: rgba(14, 16, 27, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+
+    .glass-card {
+      background: linear-gradient(135deg, rgba(20, 24, 40, 0.8) 0%, rgba(10, 12, 20, 0.9) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 240, 255, 0.12);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(0, 240, 255, 0.5);
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.25), inset 0 0 15px rgba(0, 240, 255, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .cyber-gradient-text {
+      background: linear-gradient(135deg, #00f0ff 0%, #7000ff 50%, #ff0055 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .cyber-btn {
+      position: relative;
+      background: linear-gradient(90deg, #00f0ff 0%, #7000ff 100%);
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .cyber-btn::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      transition: 0.5s;
+    }
+
+    .cyber-btn:hover::before {
+      left: 100%;
+    }
+
+    .cyber-grid-bg {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* Glow Effects */
+    .glow-cyan {
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+    }
+    .glow-magenta {
+      box-shadow: 0 0 20px rgba(255, 0, 85, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-cyber-black text-slate-100 font-sans min-h-screen flex flex-col justify-between selection:bg-cyber-cyan selection:text-black cyber-grid-bg overflow-x-hidden">
+<!-- Lock Overlay Screen -->
+<div id="auth-lock-overlay" class="fixed inset-0 z-[9999] bg-slate-950/95 backdrop-blur-2xl flex items-center justify-center p-4">
+  <div class="glass-card max-w-md w-full p-8 rounded-3xl border border-indigo-500/30 text-center space-y-6 shadow-2xl shadow-indigo-500/20">
+    
+    <div class="w-20 h-20 mx-auto rounded-2xl bg-indigo-600/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400 text-4xl shadow-inner">
+      <i class="fa-brands fa-discord"></i>
+    </div>
+
+    <div class="space-y-2">
+      <h2 class="text-2xl font-display font-black text-white tracking-wide">AUTHENTICATION REQUIRED</h2>
+      <p class="text-xs text-slate-400 leading-relaxed">You must authorize with your Discord account to access the 4FLAG CHEATS dashboard & store.</p>
+    </div>
+
+    <button onclick="loginWithDiscord()" class="w-full py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-display font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-3 shadow-lg shadow-indigo-600/30 cursor-pointer">
+      <i class="fa-brands fa-discord text-lg"></i>
+      <span>Connect with Discord</span>
+    </button>
+
+    <p class="text-[10px] text-slate-500 font-mono">Protected by 4FLAG Security System</p>
+  </div>
+</div>
+ <!-- Discord User Profile Container -->
+
+</div>
+</div>
+    <div class="bg-slate-950/80 border-b border-slate-800/50 py-1.5 px-4 text-xs font-mono">
+      <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+        <!-- Live Status -->
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2 bg-slate-900/80 px-2.5 py-0.5 rounded-full border border-emerald-500/30">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span class="text-emerald-400 font-semibold tracking-wide uppercase text-[10px]">ALL SYSTEMS UNDETECTED</span>
+          </div>
+
+          
+        </div>
+
+        <div id="discord-auth-container" class="flex items-center gap-3">
+  <!-- حالة قبل تسجيل الدخول -->
+  <button id="discord-login-btn" onclick="loginWithDiscord()" class="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-display font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-indigo-600/30 cursor-pointer">
+    <i class="fa-brands fa-discord text-sm"></i>
+    <span>Login</span>
+  </button>
+
+  <!-- حالة بعد تسجيل الدخول (Profile Card) -->
+  <div id="discord-user-profile" class="hidden flex items-center gap-2.5 bg-slate-900 border border-indigo-500/30 rounded-xl px-3 py-1.5 shadow-md">
+    <img id="user-avatar" src="" alt="Avatar" class="w-7 h-7 rounded-full border border-indigo-400">
+    <div class="text-left">
+      <p id="user-username" class="text-xs font-bold text-white leading-none"></p>
+      <span class="text-[9px] text-emerald-400 font-mono flex items-center gap-1 mt-0.5">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Online
+      </span>
+    </div>
+    <button onclick="logoutDiscord()" title="Logout" class="ml-1 text-slate-400 hover:text-red-400 text-xs transition-colors cursor-pointer">
+      <i class="fa-solid fa-right-from-bracket"></i>
+    </button>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo -->
+        <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('home')">
+          <div class="relative w-11 h-11 bg-gradient-to-br from-cyber-cyan via-purple-600 to-cyber-magenta p-0.5 rounded-xl shadow-lg shadow-cyber-cyan/20">
+            <div class="w-full h-full bg-cyber-black rounded-[10px] flex items-center justify-center">
+              <i class="fa-solid fa-flag text-cyber-cyan text-xl"></i>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-1">
+              <span class="font-display font-black text-2xl tracking-wider text-white">4FLAG</span>
+              <span class="font-display font-black text-2xl tracking-wider text-cyber-cyan">CHEATS</span>
+            </div>
+            <span class="text-[9px] tracking-widest text-slate-400 font-mono block -mt-1 uppercase">Next-Gen Gaming Suite</span>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-xl border border-slate-800">
+          <button onclick="switchTab('home')" id="nav-home" class="nav-btn active px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200 flex items-center gap-2 text-cyber-cyan bg-slate-800/80">
+            <i class="fa-solid fa-house text-xs"></i> Home
+          </button>
+          <button onclick="switchTab('vip')" id="nav-vip" class="nav-btn px-4 py-2 rounded-lg font-medium text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 transition-all duration-200 flex items-center gap-2">
+            <i class="fa-solid fa-crown text-xs text-amber-400"></i> VIP Store
+            <span class="bg-cyber-magenta/20 text-cyber-magenta text-[10px] px-1.5 py-0.2 rounded font-mono uppercase border border-cyber-magenta/30">HOT</span>
+          </button>
+          <button onclick="switchTab('free')" id="nav-free" class="nav-btn px-4 py-2 rounded-lg font-medium text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 transition-all duration-200 flex items-center gap-2">
+            <i class="fa-solid fa-gift text-xs text-cyber-green"></i> Free Panel
+          </button>
+          <button onclick="switchTab('emulator')" id="nav-emulator" class="nav-btn px-4 py-2 rounded-lg font-medium text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 transition-all duration-200 flex items-center gap-2">
+            <i class="fa-solid fa-desktop text-xs"></i> Best Emulator
+          </button>
+          <button onclick="switchTab('setup')" id="nav-setup" class="nav-btn px-4 py-2 rounded-lg font-medium text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 transition-all duration-200 flex items-center gap-2">
+            <i class="fa-solid fa-circle-play text-xs text-purple-400"></i> Full Setup
+          </button>
+          <button onclick="switchTab('support')" id="nav-support" class="nav-btn px-4 py-2 rounded-lg font-medium text-sm text-slate-300 hover:text-white hover:bg-slate-800/50 transition-all duration-200 flex items-center gap-2">
+            <i class="fa-solid fa-headset text-xs"></i> Support
+          </button>
+        </nav>
+
+        <!-- CTA Right -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button onclick="switchTab('vip')" class="cyber-btn px-5 py-2.5 rounded-lg text-black font-bold font-display text-xs tracking-wider uppercase shadow-lg shadow-cyber-cyan/20 flex items-center gap-2">
+            <i class="fa-solid fa-bolt"></i> Instant Buy
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex lg:hidden">
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="text-slate-300 hover:text-white p-2 rounded-lg bg-slate-900 border border-slate-800">
+            <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-800 bg-cyber-dark/95 backdrop-blur-xl px-4 pt-2 pb-6 space-y-2">
+      <button onclick="switchTab('home')" class="w-full text-left px-4 py-3 rounded-lg font-medium text-slate-200 hover:bg-slate-800/80 flex items-center gap-3 border border-transparent hover:border-slate-700">
+        <i class="fa-solid fa-house text-cyber-cyan w-5"></i> Home
+      </button>
+      <button onclick="switchTab('vip')" class="w-full text-left px-4 py-3 rounded-lg font-medium text-slate-200 hover:bg-slate-800/80 flex items-center gap-3 border border-transparent hover:border-slate-700">
+        <i class="fa-solid fa-crown text-amber-400 w-5"></i> VIP Store
+      </button>
+      <button onclick="switchTab('free')" class="w-full text-left px-4 py-3 rounded-lg font-medium text-slate-200 hover:bg-slate-800/80 flex items-center gap-3 border border-transparent hover:border-slate-700">
+        <i class="fa-solid fa-gift text-cyber-green w-5"></i> Free Panel
+      </button>
+      <button onclick="switchTab('emulator')" class="w-full text-left px-4 py-3 rounded-lg font-medium text-slate-200 hover:bg-slate-800/80 flex items-center gap-3 border border-transparent hover:border-slate-700">
+        <i class="fa-solid fa-desktop text-blue-400 w-5"></i> Best Emulator
+      </button>
+      <button onclick="switchTab('setup')" class="w-full text-left px-4 py-3 rounded-lg font-medium text-slate-200 hover:bg-slate-800/80 flex items-center gap-3 border border-transparent hover:border-slate-700">
+        <i class="fa-solid fa-circle-play text-purple-400 w-5"></i> Full Setup
+      </button>
+      <button onclick="switchTab('support')" class="w-full text-left px-4 py-3 rounded-lg font-medium text-slate-200 hover:bg-slate-800/80 flex items-center gap-3 border border-transparent hover:border-slate-700">
+        <i class="fa-solid fa-headset text-pink-400 w-5"></i> Support & Discord
+      </button>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- ========================================== -->
+    <!-- TAB 1: HOME SECTION                        -->
+    <!-- ========================================== -->
+    <div id="tab-home" class="tab-content space-y-16 animate-fade-in">
+      
+      <!-- Hero Banner -->
+      <section class="relative rounded-3xl overflow-hidden glass-panel p-8 sm:p-12 lg:p-16 border border-cyber-cyan/20">
+        <!-- Radial Gradient Lights Background -->
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-cyber-cyan/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-cyber-magenta/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan text-xs font-mono font-semibold uppercase tracking-wider">
+              <i class="fa-solid fa-fire text-cyber-magenta"></i> SEASON 2026 FULLY COMPATIBLE
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight leading-none text-white">
+              DOMINATE EVERY GAME WITH <span class="cyber-gradient-text">4FLAG VIP</span>
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+              Ultra-low latency, internal kernel driver bypass, silent aim lock, zero recoil, and real-time headshot optimization. Designed for competitive dominance.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+              <button onclick="switchTab('vip')" class="cyber-btn px-8 py-4 rounded-xl text-black font-display font-bold text-sm tracking-widest uppercase shadow-xl shadow-cyber-cyan/20 flex items-center gap-3 hover:scale-105 transition-transform">
+                <i class="fa-solid fa-cart-shopping"></i> Explore VIP Store
+              </button>
+              <button onclick="switchTab('free')" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 font-display font-bold text-sm tracking-widest uppercase text-slate-200 transition-all flex items-center gap-3">
+                <i class="fa-solid fa-download text-cyber-green"></i> Try Free Panel
+              </button>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+              <div>
+                <p class="font-display font-bold text-2xl text-white">99.8%</p>
+                <p class="text-xs text-slate-400">Undetected Rate</p>
+              </div>
+              <div>
+                <p class="font-display font-bold text-2xl text-cyber-cyan">45,000+</p>
+                <p class="text-xs text-slate-400">Active Gamers</p>
+              </div>
+              <div>
+                <p class="font-display font-bold text-2xl text-cyber-magenta">&lt; 1 min</p>
+                <p class="text-xs text-slate-400">Instant Delivery</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Showcase Card -->
+          <div class="lg:col-span-5">
+            <div class="glass-card p-6 rounded-2xl relative group overflow-hidden border border-cyber-cyan/30">
+              <div class="absolute inset-0 bg-gradient-to-br from-cyber-cyan/10 via-transparent to-cyber-magenta/10 opacity-50 group-hover:opacity-100 transition-opacity"></div>
+              
+              <div class="relative z-10 space-y-4">
+                <div class="flex justify-between items-center border-b border-slate-800 pb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-cyber-cyan/20 border border-cyber-cyan/40 flex items-center gap-2 justify-center text-cyber-cyan">
+                      <i class="fa-solid fa-crosshairs text-lg"></i>
+                    </div>
+                    <div>
+                      <h3 class="font-display font-bold text-lg text-white">4FLAG ULTRA PANEL</h3>
+                      <p class="text-xs text-emerald-400 font-mono">● Status: UNDETECTED</p>
+                    </div>
+                  </div>
+                  <span class="bg-amber-500/20 text-amber-300 font-bold text-xs px-2.5 py-1 rounded-full border border-amber-500/30">v5.2 VIP</span>
+                </div>
+
+                <!-- Feature Quick Checklist -->
+                <ul class="space-y-2.5 text-sm text-slate-300 font-sans">
+                  <li class="flex items-center gap-3">
+                    <i class="fa-solid fa-circle-check text-cyber-green text-base"></i>
+                    <span><strong>100% Aim Assist Lock:</strong> Smooth drag & silent precision</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <i class="fa-solid fa-circle-check text-cyber-green text-base"></i>
+                    <span><strong>Wallhack ESP 3D:</strong> Skeleton, Boxes, Health Bar, Distance</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <i class="fa-solid fa-circle-check text-cyber-green text-base"></i>
+                    <span><strong>Recoil Elimination:</strong> 0% Gun Shake, Laser Shot</span>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <i class="fa-solid fa-circle-check text-cyber-green text-base"></i>
+                    <span><strong>Anti-Ban Kernel Guard:</strong> HWID Spoof Built-in</span>
+                  </li>
+                </ul>
+
+                <button onclick="openPreviewModal('4flag-ultra')" class="w-full py-3 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-cyber-cyan font-bold text-xs font-display tracking-wider uppercase border border-cyber-cyan/30 transition-all flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-eye"></i> View Full Preview & Specs
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="space-y-8">
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white">WHY CHOOSE <span class="text-cyber-cyan">4FLAG</span></h2>
+          <p class="text-slate-400 text-sm">Built by competitive engineers for high-tier performance, security, and ease of setup.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="glass-card p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-purple-600/20 border border-purple-500/40 flex items-center justify-center text-purple-400 text-xl">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white">Kernel Level Anti-Cheat</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Operates strictly below anti-cheat detection layers with custom driver signature randomization.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-cyber-cyan/20 border border-cyber-cyan/40 flex items-center justify-center text-cyber-cyan text-xl">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white">Instant Auto Key Delivery</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">No manual waiting. Receive your license key, download links, and setup manual right after purchase.</p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-cyber-magenta/20 border border-cyber-magenta/40 flex items-center justify-center text-cyber-magenta text-xl">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white">24/7 AnyDesk VIP Support</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Having technical issues? Our technicians assist via Discord and AnyDesk live step-by-step.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Banner Redirect -->
+      <section class="glass-panel p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 border-l-4 border-cyber-cyan">
+        <div>
+          <h3 class="font-display font-bold text-xl text-white">Need optimal emulator settings for max FPS?</h3>
+          <p class="text-slate-400 text-sm mt-1">Check our optimized BlueStacks & MSI bypass setups tuned for 90-120 FPS.</p>
+        </div>
+        <button onclick="switchTab('emulator')" class="px-6 py-3 rounded-xl bg-cyber-cyan/20 text-cyber-cyan hover:bg-cyber-cyan hover:text-black font-display font-bold text-xs uppercase tracking-wider transition-all border border-cyber-cyan/40 whitespace-nowrap">
+          View Emulator Tweaks <i class="fa-solid fa-arrow-right ml-1"></i>
+        </button>
+      </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- TAB 2: VIP STORE (PRICE CARDS)             -->
+    <!-- ========================================== -->
+    <div id="tab-vip" class="tab-content hidden space-y-12 animate-fade-in">
+      <div class="text-center space-y-3 max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase">
+          <i class="fa-solid fa-crown"></i> Exclusive VIP Access
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">SELECT YOUR VIP PLAN</h2>
+        <p class="text-slate-400 text-sm sm:text-base">Instant automated delivery after payment. All plans include 24/7 updates and HWID reset protection.</p>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        
+        <!-- Day Pass -->
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between relative border border-slate-800">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <span class="text-xs font-mono text-slate-400 uppercase tracking-widest">Entry Access</span>
+              <h3 class="font-display font-bold text-2xl text-white">DAY PASS</h3>
+              <p class="text-xs text-slate-400">Great for quick testing & rank pushes.</p>
+            </div>
+
+            <div class="py-2 border-y border-slate-800/80">
+              <span class="font-display font-black text-4xl text-white">$0.99</span>
+              <span class="text-xs text-slate-400">/ 24 Hours</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Full VIP Menu Access
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Aim Lock & Silent Aim
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> 3D Wallhack ESP
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Built-in HWID Spoof
+              </li>
+              <li class="flex items-center gap-2.5 text-slate-500">
+                <i class="fa-solid fa-circle-xmark text-slate-600 text-sm"></i> Priority AnyDesk Help
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 space-y-2">
+            <button onclick="triggerPurchase('Day Pass VIP', '$0.99')" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-cyber-cyan hover:text-black font-display font-bold text-xs uppercase tracking-wider text-slate-200 transition-all border border-slate-700">
+              Purchase Pass
+            </button>
+            <button onclick="openPreviewModal('4flag-ultra')" class="w-full text-center text-[11px] text-slate-400 hover:text-cyber-cyan pt-1">
+              View Tool Specs
+            </button>
+          </div>
+        </div>
+
+        <!-- Weekly Pass -->
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between relative border border-slate-800">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <span class="text-xs font-mono text-cyber-cyan uppercase tracking-widest">Recommended</span>
+              <h3 class="font-display font-bold text-2xl text-white">WEEKLY PASS</h3>
+              <p class="text-xs text-slate-400">Perfect balance for active weekly grinding.</p>
+            </div>
+
+            <div class="py-2 border-y border-slate-800/80">
+              <span class="font-display font-black text-4xl text-cyber-cyan">$7.99</span>
+              <span class="text-xs text-slate-400">/ 7 Days</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Full VIP Menu Access
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Aim Lock & Silent Aim
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> 3D Wallhack ESP
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Built-in HWID Spoof
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Discord Support Access
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 space-y-2">
+            <button onclick="triggerPurchase('Weekly Pass VIP', '$7.99')" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-cyber-cyan hover:text-black font-display font-bold text-xs uppercase tracking-wider text-slate-200 transition-all border border-slate-700">
+              Purchase Pass
+            </button>
+            <button onclick="openPreviewModal('4flag-ultra')" class="w-full text-center text-[11px] text-slate-400 hover:text-cyber-cyan pt-1">
+              View Tool Specs
+            </button>
+          </div>
+        </div>
+
+        <!-- Monthly Pass - FEATURED -->
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between relative border-2 border-cyber-cyan glow-cyan bg-slate-900/90 transform lg:-translate-y-2">
+          
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-cyber-cyan to-purple-600 text-black font-display font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-widest shadow-lg">
+            ★ MOST POPULAR
+          </div>
+
+          <div class="space-y-6">
+            <div class="space-y-2 pt-2">
+              <span class="text-xs font-mono text-cyber-magenta uppercase tracking-widest">Best Value</span>
+              <h3 class="font-display font-bold text-2xl text-white">MONTHLY VIP</h3>
+              <p class="text-xs text-slate-300">Complete peace of mind for serious rankers.</p>
+            </div>
+
+            <div class="py-2 border-y border-slate-800/80">
+              <span class="font-display font-black text-4xl text-white">$19.99</span>
+              <span class="text-xs text-slate-400">/ 30 Days</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-200">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Everything in Weekly Pass
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Auto Update Bypass v5.2
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Streamer Mode (Hidden in Rec)
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> 1 Free HWID Reset
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Priority AnyDesk Support
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 space-y-2">
+            <button onclick="triggerPurchase('Monthly Pass VIP', '$19.99')" class="cyber-btn w-full py-3.5 rounded-xl text-black font-display font-black text-xs uppercase tracking-wider shadow-lg shadow-cyber-cyan/30">
+              Buy Monthly VIP
+            </button>
+            <button onclick="openPreviewModal('4flag-ultra')" class="w-full text-center text-[11px] text-cyber-cyan hover:underline pt-1">
+              View Specs & Screenshots
+            </button>
+          </div>
+        </div>
+
+        <!-- Lifetime Pass -->
+        <div class="glass-card p-6 rounded-2xl flex flex-col justify-between relative border border-purple-500/40 bg-gradient-to-b from-purple-950/20 to-slate-900">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <span class="text-xs font-mono text-purple-400 uppercase tracking-widest">Ultimate Edition</span>
+              <h3 class="font-display font-bold text-2xl text-white">LIFETIME ACCESS</h3>
+              <p class="text-xs text-slate-400">Pay once, dominate forever with unlimited updates.</p>
+            </div>
+
+            <div class="py-2 border-y border-slate-800/80">
+              <span class="font-display font-black text-4xl text-purple-300">$29.99</span>
+              <span class="text-xs text-slate-400">/ Unlimited</span>
+            </div>
+
+            <ul class="space-y-3 text-xs text-slate-300">
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Unlimited Access Forever
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> All Future Game Updates
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Unlimited HWID Resets
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Private VIP Discord Role
+              </li>
+              <li class="flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i> Direct Engineer Support
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-6 space-y-2">
+            <button onclick="triggerPurchase('Lifetime Pass VIP', '$29.99')" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyber-magenta hover:from-purple-500 hover:to-pink-600 text-white font-display font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-purple-600/20">
+              Get Lifetime Access
+            </button>
+            <button onclick="openPreviewModal('4flag-ultra')" class="w-full text-center text-[11px] text-slate-400 hover:text-purple-300 pt-1">
+              View Tool Specs
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- TAB 3: FREE PANEL                         -->
+    <!-- ========================================== -->
+    <div id="tab-free" class="tab-content hidden space-y-10 animate-fade-in">
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-emerald-500/30 relative overflow-hidden">
+        <div class="max-w-3xl space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono uppercase">
+            <i class="fa-solid fa-gift"></i> 100% Free Public Version
+          </div>
+
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white">4FLAG LITE FREE PANEL</h2>
+          <p class="text-slate-300 text-base leading-relaxed">
+            Get started with our basic utility panel for Free Fire & Emulators. Includes basic headshot calibration, FPS booster, and RAM cleaner.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="glass-card p-4 rounded-xl border border-slate-800">
+              <h4 class="font-display font-bold text-sm text-cyber-green mb-1"><i class="fa-solid fa-check-circle mr-1"></i> Included Features</h4>
+              <ul class="text-xs text-slate-400 space-y-1.5 font-mono">
+                <li>• Basic Sensi Optimizer</li>
+                <li>• Ultra Graphics Unlock (90FPS)</li>
+                <li>• RAM & Cache Cleaner Utility</li>
+                <li>• Smart Emulator Detection Fix</li>
+              </ul>
+            </div>
+
+            <div class="glass-card p-4 rounded-xl border border-slate-800">
+              <h4 class="font-display font-bold text-sm text-amber-400 mb-1"><i class="fa-solid fa-triangle-exclamation mr-1"></i> VIP vs Free Comparison</h4>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Free panel has standard aim drag. For <strong class="text-slate-200">Silent Aim, Aimbot Lock, and Full 3D Wallhack</strong>, upgrade to VIP Store.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4 items-center">
+        <a href="https://www.mediafire.com/file/ybob7os9yqdnsu1/4FLAG+CHEAT+V1.0.rar/file" target="_blank" download class="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-display font-black text-sm tracking-wider uppercase transition-all shadow-lg shadow-emerald-500/20 flex items-center gap-2 decoration-none">
+       <i class="fa-solid fa-download text-lg"></i> Download Free Panel (v2.1)
+      </a>
+     <span class="text-xs font-mono text-slate-500">File size: 2.52 MB | Windows 10/11</span>
+   </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- TAB 4: BEST EMULATOR                       -->
+    <!-- ========================================== -->
+    <div id="tab-emulator" class="tab-content hidden space-y-10 animate-fade-in">
+      <div class="text-center space-y-3 max-w-3xl mx-auto">
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">TESTED & OPTIMIZED EMULATORS</h2>
+        <p class="text-slate-400 text-sm">Download pre-tweaked emulator builds designed for smooth 120 FPS shot registration with 4FLAG tools.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- BlueStacks 5 Tweaked -->
+        <div class="glass-card p-8 rounded-2xl space-y-6 border border-cyber-cyan/20">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-400 text-2xl font-bold font-display">
+                BS5
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-xl text-white">BlueStacks 5 (x64 VIP Edition)</h3>
+                <p class="text-xs text-slate-400">Zero Lag & Modified DPI Profiles</p>
+              </div>
+            </div>
+            <span class="bg-blue-500/20 text-blue-300 text-xs px-2.5 py-1 rounded-full font-mono">120 FPS</span>
+          </div>
+
+          <ul class="space-y-2.5 text-xs text-slate-300 font-mono">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyber-cyan"></i> Pre-configured Mouse Acceleration Patch</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyber-cyan"></i> Custom ASUS ROG 2 Phone Profile Included</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyber-cyan"></i> Compatible with 4FLAG Bypass v5.2</li>
+          </ul>
+
+         <a href="https://www.mediafire.com/file/2qyokin1m9qp0yu/BlueStacks_v5.22.130.1019.exe/file" target="_blank" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-blue-600 hover:text-white font-display font-bold text-xs uppercase tracking-wider text-slate-200 transition-all border border-slate-700 flex items-center justify-center gap-2 no-underline cursor-pointer">
+        <i class="fa-solid fa-download"></i> Download Optimized BS5 Build
+       </a>
+        </div>
+
+        <!-- MSI App Player Optimized -->
+<div class="glass-card p-8 rounded-2xl space-y-6 border border-red-500/20">
+  <div class="flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="w-14 h-14 rounded-2xl bg-red-600/20 border border-red-500/40 flex items-center justify-center text-red-400 text-2xl font-bold font-display">
+        MSI
+      </div>
+      <div>
+        <h3 class="font-display font-bold text-xl text-white">MSI App Player (VIP Custom Build)</h3>
+        <p class="text-xs text-slate-400">Extreme FPS & Precision Touch Bypass</p>
+      </div>
+    </div>
+    <span class="bg-red-500/20 text-red-300 text-xs px-2.5 py-1 rounded-full font-mono">Max FPS</span>
+  </div>
+
+  <ul class="space-y-2.5 text-xs text-slate-300 font-mono">
+    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-red-400"></i> Locked 90/120 FPS High Refresh Rate</li>
+    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-red-400"></i> Zero Input Lag & Optimized Mouse Sense</li>
+    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-red-400"></i> Pre-configured Keymapping for 4FLAG Panel</li>
+  </ul>
+
+  <!-- زر التحميل كـ رابط مباشر -->
+  <a href="https://www.mediafire.com/file/72j769a1o9mmq7t/Msi+Safe+Version.exe/file" target="_blank" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-red-600 hover:text-white font-display font-bold text-xs uppercase tracking-wider text-slate-200 transition-all border border-slate-700 flex items-center justify-center gap-2 no-underline cursor-pointer">
+    <i class="fa-solid fa-download"></i> Download MSI App Player Build
+  </a>
+</div>
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- TAB 5: FULL SETUP (VIDEO GUIDES)          -->
+    <!-- ========================================== -->
+    <div id="tab-setup" class="tab-content hidden space-y-10 animate-fade-in">
+      <div class="text-center space-y-3 max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-mono uppercase">
+          <i class="fa-solid fa-circle-play"></i> Video Tutorial Library
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">COMPLETE INSTALLATION GUIDE</h2>
+        <p class="text-slate-400 text-sm">Watch the step-by-step video tutorials below to ensure 100% correct setup without errors.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        
+        <!-- Video Showcase 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 space-y-4 p-4">
+          <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center group cursor-pointer" onclick="playVideo('tutorial-1')">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80" alt="Tutorial Preview" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity">
+            <div class="absolute w-16 h-16 rounded-full bg-cyber-cyan/90 text-black flex items-center justify-center text-2xl pl-1 shadow-lg shadow-cyber-cyan/40 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-cyber-cyan border border-cyber-cyan/30">
+              04:20 • Full Installation Guide
+            </div>
+          </div>
+
+          <div class="px-2 space-y-2">
+            <h3 class="font-display font-bold text-lg text-white">How to Install 4FLAG VIP Panel & Bypass Antivirus</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Step-by-step guide showing Windows Defender exclusions, loader extraction, license activation, and launching in safe mode.
+            </p>
+          </div>
+        </div>
+
+        <!-- Video Showcase 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 space-y-4 p-4">
+          <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center group cursor-pointer" onclick="playVideo('tutorial-2')">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80" alt="Tutorial Preview" class="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity">
+            <div class="absolute w-16 h-16 rounded-full bg-cyber-magenta/90 text-white flex items-center justify-center text-2xl pl-1 shadow-lg shadow-cyber-magenta/40 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-black/80 backdrop-blur-md px-3 py-1 rounded text-xs font-mono text-cyber-magenta border border-cyber-magenta/30">
+              03:15 • Best Aim Sensitivity Settings
+            </div>
+          </div>
+
+          <div class="px-2 space-y-2">
+            <h3 class="font-display font-bold text-lg text-white">Best Aim Lock & Drag Sensitivity Setup for Free Fire</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Learn how to calibrate Smoothness values, FOV Circle radii, and DPI settings for maximum red headshots without shaking.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- TAB 6: SUPPORT SECTION                     -->
+    <!-- ========================================== -->
+    <div id="tab-support" class="tab-content hidden space-y-12 animate-fade-in">
+      <div class="text-center space-y-3 max-w-3xl mx-auto">
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">NEED HELP? WE ARE ONLINE</h2>
+        <p class="text-slate-400 text-sm">Join our active Discord community or contact technical staff directly for instant assistance.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        <!-- Discord Card -->
+        <div class="glass-card p-8 rounded-2xl space-y-6 border border-indigo-500/30 text-center flex flex-col items-center justify-between">
+          <div class="space-y-4">
+            <div class="w-16 h-16 rounded-2xl bg-indigo-600/20 text-indigo-400 border border-indigo-500/40 flex items-center justify-center text-3xl mx-auto">
+              <i class="fa-brands fa-discord"></i>
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white">Official Discord Community</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Connect with over 20,000 active members, download loader updates, request HWID resets, and get AnyDesk assistance.
+            </p>
+          </div>
+
+          <a href="https://discord.gg/cevZtvJW5t" target="_blank" class="w-full py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-display font-bold text-xs uppercase tracking-widest transition-all shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+            <i class="fa-brands fa-discord text-base"></i> Join Discord Server
+          </a>
+        </div>
+
+        <!-- WhatsApp Support Card -->
+        <div class="glass-card p-8 rounded-2xl space-y-6 border border-emerald-500/30 text-center flex flex-col items-center justify-between">
+          <div class="space-y-4">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center text-3xl mx-auto">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white">WhatsApp VIP Helpdesk</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Need fast payment help via Crypto, Binane Pay, or Local Bank Transfers? Chat directly with our manager on WhatsApp.
+            </p>
+          </div>
+
+          <button onclick="openSupportChat()" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-display font-bold text-xs uppercase tracking-widest transition-all shadow-lg shadow-emerald-600/30 flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-base"></i> Contact VIP Agent
+          </button>
+        </div>
+
+      </div>
+
+      <!-- FAQ Accordions -->
+      <div class="max-w-3xl mx-auto space-y-4 pt-4">
+        <h3 class="font-display font-bold text-xl text-center text-white mb-6">Frequently Asked Questions</h3>
+
+        <div class="glass-card p-5 rounded-xl space-y-2">
+          <h4 class="font-display font-bold text-sm text-cyber-cyan flex items-center justify-between cursor-pointer" onclick="toggleFaq(this)">
+            <span>How fast will I receive my activation license key?</span>
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </h4>
+          <p class="text-xs text-slate-400 leading-relaxed pt-2">
+            Delivery is 100% automated! Immediately after payment, your key and download instructions will appear on screen and will also be emailed to your inbox.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-xl space-y-2">
+          <h4 class="font-display font-bold text-sm text-cyber-cyan flex items-center justify-between cursor-pointer" onclick="toggleFaq(this)">
+            <span>Will this ban my main gaming account?</span>
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </h4>
+          <p class="text-xs text-slate-400 leading-relaxed pt-2">
+            Our VIP builds use driver-level memory bypass protection that keeps your main account completely hidden from anti-cheat systems when used moderately.
+          </p>
+        </div>
+
+        <div class="glass-card p-5 rounded-xl space-y-2">
+          <h4 class="font-display font-bold text-sm text-cyber-cyan flex items-center justify-between cursor-pointer" onclick="toggleFaq(this)">
+            <span>Can I transfer my key if I switch PCs?</span>
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </h4>
+          <p class="text-xs text-slate-400 leading-relaxed pt-2">
+            Yes! Monthly and Lifetime members receive free HWID resets every 7 days through our Discord support bot.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  
+  <!-- FEATURE PREVIEW MODAL -->
+  <div id="preview-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden animate-fade-in">
+    <div class="glass-panel w-full max-w-3xl rounded-3xl p-6 sm:p-8 space-y-6 border border-cyber-cyan/40 relative max-h-[90vh] overflow-y-auto">
+      
+      <!-- Modal Close Button -->
+      <button onclick="closeModal('preview-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-white w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <div class="flex items-center gap-3">
+            <h3 class="font-display font-black text-2xl text-white">4FLAG ULTRA VIP PANEL v5.2</h3>
+            <span class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[10px] px-2.5 py-0.5 rounded-full font-mono font-bold">
+              UNDETECTED
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 font-mono mt-0.5">Compatible: Windows 10 & 11 | Free Fire & FF MAX</p>
+        </div>
+      </div>
+
+      <!-- Screenshot Preview Grid -->
+      <div class="space-y-2">
+        <h4 class="font-display font-bold text-xs uppercase tracking-wider text-slate-300">In-Game Visual Showcase</h4>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="relative rounded-xl overflow-hidden border border-slate-800 aspect-video group">
+            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80" alt="ESP Preview" class="w-full h-full object-cover">
+            <div class="absolute bottom-2 left-2 bg-black/80 text-cyber-cyan text-[10px] font-mono px-2 py-0.5 rounded border border-cyber-cyan/30">
+              3D Skeleton ESP + Health
+            </div>
+          </div>
+          <div class="relative rounded-xl overflow-hidden border border-slate-800 aspect-video group">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80" alt="Menu Preview" class="w-full h-full object-cover">
+            <div class="absolute bottom-2 left-2 bg-black/80 text-cyber-magenta text-[10px] font-mono px-2 py-0.5 rounded border border-cyber-magenta/30">
+              Dark Cyber In-Game Menu
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Specifications Breakdown -->
+      <div class="space-y-3">
+        <h4 class="font-display font-bold text-xs uppercase tracking-wider text-slate-300">Full Feature Specifications</h4>
+        <div class="grid sm:grid-cols-2 gap-3 text-xs">
+          <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 space-y-1">
+            <div class="font-bold text-cyber-cyan flex items-center gap-2">
+              <i class="fa-solid fa-crosshairs"></i> Aimbot & Shooting Engine
+            </div>
+            <p class="text-slate-400 text-[11px]">Silent Aim, FOV Slider (0-360°), Smoothness Drag Control, Lock on Downed Targets toggle, Headshot percentage calibration.</p>
+          </div>
+
+          <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 space-y-1">
+            <div class="font-bold text-purple-400 flex items-center gap-2">
+              <i class="fa-solid fa-eye"></i> Visual ESP Overlay
+            </div>
+            <p class="text-slate-400 text-[11px]">Full Player Skeleton 3D, Distance Meter, Grenade Line Warning, Name & Weapon ID tags, Enemy Offscreen Arrow indicators.</p>
+          </div>
+
+          <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 space-y-1">
+            <div class="font-bold text-emerald-400 flex items-center gap-2">
+              <i class="fa-solid fa-shield-cat"></i> Anti-Cheat & Security
+            </div>
+            <p class="text-slate-400 text-[11px]">Kernel Ring-0 Driver, HWID Spoofer built-in, Dynamic Memory Injection, Streamer Mode (Hidden on OBS/Discord Screenshare).</p>
+          </div>
+
+          <div class="bg-slate-900/80 p-3 rounded-xl border border-slate-800/80 space-y-1">
+            <div class="font-bold text-amber-400 flex items-center gap-2">
+              <i class="fa-solid fa-gauge-high"></i> Performance Tweaks
+            </div>
+            <p class="text-slate-400 text-[11px]">Zero FPS Drop optimization, Auto DPI scale sync, Fast Gun Swap, Fast Medkit injection trigger.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Footer -->
+      <div class="pt-2 flex gap-4">
+        <button onclick="closeModal('preview-modal'); switchTab('vip');" class="cyber-btn w-full py-3.5 rounded-xl text-black font-display font-black text-xs uppercase tracking-wider">
+          Go To VIP Pricing & Buy
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- INSTANT PURCHASE TRIGGER MODAL -->
+  <div id="purchase-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden animate-fade-in">
+    <div class="glass-panel w-full max-w-md rounded-3xl p-6 sm:p-8 space-y-6 border border-cyber-cyan/40 relative">
+      
+      <button onclick="closeModal('purchase-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-white w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center space-y-2">
+        <div class="w-12 h-12 bg-cyber-cyan/20 border border-cyber-cyan/40 text-cyber-cyan rounded-2xl flex items-center justify-center text-xl mx-auto">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <h3 class="font-display font-black text-xl text-white">CHECKOUT ORDER</h3>
+        <p class="text-xs text-slate-400">Selected Product: <strong id="purchase-plan-title" class="text-cyber-cyan">VIP Pass</strong></p>
+      </div>
+
+      <!-- Selected Item Summary -->
+      <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 flex justify-between items-center">
+        <div>
+          <p class="font-display font-bold text-sm text-white" id="summary-plan-name">VIP Monthly Pass</p>
+          <p class="text-[10px] text-emerald-400 font-mono">Instant Auto Key Delivery</p>
+        </div>
+        <p class="font-display font-black text-2xl text-cyber-cyan" id="summary-plan-price">$29.99</p>
+      </div>
+
+      <!-- Payment Method Selection -->
+      <div class="space-y-3">
+  <label class="block text-xs font-mono text-slate-400 uppercase tracking-wider">Select Order & Support Gateway</label>
+  
+  <div class="grid grid-cols-1 gap-3">
+    <!-- Discord Ticket Payment / Buy Method -->
+    <a href="https://discord.gg/cevZtvJW5t" target="_blank" class="p-4 rounded-xl bg-slate-900 border-2 border-indigo-500 hover:border-indigo-400 text-left space-y-2 transition-all flex items-center justify-between no-underline group cursor-pointer shadow-lg shadow-indigo-500/10">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400 text-xl group-hover:scale-110 transition-transform">
+          <i class="fa-brands fa-discord"></i>
+        </div>
+        <div>
+          <p class="font-bold text-sm text-white group-hover:text-indigo-300 transition-colors">Instant Buy via Discord Ticket</p>
+          <p class="text-[11px] text-slate-400">Open a ticket to complete payment & receive key instantly</p>
+        </div>
+      </div>
+      <div class="text-indigo-400 font-bold text-xs uppercase flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+        Open Ticket <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </a>
+  </div>
+</div>
+
+      <!-- Checkout CTA -->
+      <button onclick="processPurchase()" class="cyber-btn w-full py-4 rounded-xl text-black font-display font-black text-xs uppercase tracking-widest shadow-lg shadow-cyber-cyan/30 flex items-center justify-center gap-2">
+        <i class="fa-solid fa-lock text-sm"></i> Complete Payment Now
+      </button>
+
+      <p class="text-[10px] text-center text-slate-500 font-mono">
+        <i class="fa-solid fa-shield-halved text-emerald-400"></i> Encrypted 256-bit SSL Automated Gateway
+      </p>
+
+    </div>
+  </div>
+
+
+  <div id="sales-popup" class="fixed bottom-6 left-6 z-40 hidden transition-all duration-500 transform translate-y-10 opacity-0">
+    <div class="glass-panel p-3.5 pr-6 rounded-2xl border border-cyber-cyan/30 shadow-2xl flex items-center gap-3.5 max-w-xs sm:max-w-sm">
+      <div class="relative">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyber-cyan to-purple-600 flex items-center justify-center text-black font-bold">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <span class="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full border-2 border-cyber-black"></span>
+      </div>
+
+      <div class="space-y-0.5">
+        <p class="text-xs text-slate-200 font-medium leading-tight" id="sales-text">
+          Someone from <strong class="text-cyber-cyan">Morocco</strong> bought VIP Monthly
+        </p>
+        <p class="text-[10px] text-slate-400 font-mono flex items-center gap-1" id="sales-time">
+          <i class="fa-solid fa-clock text-slate-500"></i> 2 minutes ago
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="border-t border-slate-800/80 bg-cyber-black/90 backdrop-blur-md mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-cyber-cyan/20 border border-cyber-cyan/40 flex items-center justify-center text-cyber-cyan">
+            <i class="fa-solid fa-flag"></i>
+          </div>
+          <div>
+            <span class="font-display font-bold text-white tracking-wider">4FLAG CHEATS</span>
+            <span class="text-xs text-slate-500 block">© 2026 All Rights Reserved.</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6 text-xs text-slate-400">
+          <a href="#" onclick="switchTab('vip')" class="hover:text-cyber-cyan">VIP Store</a>
+          <a href="#" onclick="switchTab('free')" class="hover:text-cyber-cyan">Free Panel</a>
+          <a href="#" onclick="switchTab('emulator')" class="hover:text-cyber-cyan">Emulators</a>
+          <a href="#" onclick="switchTab('support')" class="hover:text-cyber-cyan">Support</a>
+        </div>
+
+        <div class="flex items-center gap-3 text-slate-400">
+          <a href="https://discord.gg/cevZtvJW5t" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyber-cyan hover:border-cyber-cyan/50 transition-all">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyber-cyan hover:border-cyber-cyan/50 transition-all">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyber-cyan hover:border-cyber-cyan/50 transition-all">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+<script>
+  const CLIENT_ID = '1525516425299624136'; // Client ID ديالك
+  const REDIRECT_URI = window.location.origin + window.location.pathname;
+
+  const OAUTH2_URL = `https://discord.com/api/oauth2/authorize?client_id=${CLIENT_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&response_type=token&scope=identify`;
+
+  function loginWithDiscord() {
+    window.location.href = OAUTH2_URL;
+  }
+
+  function logoutDiscord() {
+    localStorage.removeItem('discord_user');
+    window.location.href = window.location.pathname;
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const fragment = new URLSearchParams(window.location.hash.slice(1));
+    const accessToken = fragment.get('access_token');
+
+    if (accessToken) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+      fetchDiscordUserData(accessToken);
+    } else {
+      const savedUser = localStorage.getItem('discord_user');
+      if (savedUser) {
+        unlockSite(JSON.parse(savedUser));
+      } else {
+        // المستخدم غير مسجل -> بقاء القفل وشل حركة الصفحة (Scroll Lock)
+        document.body.style.overflow = 'hidden';
+      }
+    }
+  });
+
+  function fetchDiscordUserData(token) {
+    fetch('https://discord.com/api/users/@me', {
+      headers: {
+        authorization: `Bearer ${token}`,
+      },
+    })
+      .then(res => res.json())
+      .then(user => {
+        if (user.id) {
+          const avatarUrl = user.avatar
+            ? `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png`
+            : `https://cdn.discordapp.com/embed/avatars/0.png`;
+
+          const userData = {
+            username: user.global_name || user.username,
+            avatar: avatarUrl,
+            id: user.id
+          };
+
+          localStorage.setItem('discord_user', JSON.stringify(userData));
+          unlockSite(userData);
+        }
+      })
+      .catch(err => console.error("Discord Auth Error:", err));
+  }
+
+  // فتح الموقع بعد التأكد من تسجيل الدخول
+  function unlockSite(user) {
+    // إخفاء الـ Overlay القافلة للموقع
+    const lockOverlay = document.getElementById('auth-lock-overlay');
+    if (lockOverlay) {
+      lockOverlay.classList.add('hidden');
+    }
+    document.body.style.overflow = 'auto'; // إرجاع السكرول عادي
+
+    // تحديث معلومات المستخدم فـ الهيدر (إلا كان عندك عناصر الملف الشخصي)
+    const loginBtn = document.getElementById('discord-login-btn');
+    const userProfile = document.getElementById('discord-user-profile');
+    const userAvatar = document.getElementById('user-avatar');
+    const userName = document.getElementById('user-username');
+
+    if (loginBtn) loginBtn.classList.add('hidden');
+    if (userProfile) userProfile.classList.remove('hidden');
+    if (userAvatar) userAvatar.src = user.avatar;
+    if (userName) userName.innerText = user.username;
+  }
+</script>
+</script>
+
+  <script>
+    // Live Clock Logic
+    function updateClock() {
+      const now = new Date();
+      const timeStr = now.toUTCString().split(' ')[4] + ' UTC';
+      const clockEl = document.getElementById('server-time');
+      if (clockEl) clockEl.innerText = timeStr;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Dynamic Live Visitor Count Fluctuations
+    let baseVisitors = 1482;
+    function randomizeVisitors() {
+      const delta = Math.floor(Math.random() * 11) - 5;
+      baseVisitors = Math.max(1200, baseVisitors + delta);
+      const visitorEl = document.getElementById('live-visitors');
+      if (visitorEl) visitorEl.innerText = baseVisitors.toLocaleString();
+    }
+    setInterval(randomizeVisitors, 4000);
+
+    // Tab Navigation Logic
+    function switchTab(tabId) {
+      // Hide all contents
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.add('hidden'));
+
+      // Show targeted tab
+      const target = document.getElementById(`tab-${tabId}`);
+      if (target) {
+        target.classList.remove('hidden');
+      }
+
+      // Update Active Styling on Navbar
+      const navButtons = document.querySelectorAll('.nav-btn');
+      navButtons.forEach(btn => {
+        btn.classList.remove('text-cyber-cyan', 'bg-slate-800/80');
+        btn.classList.add('text-slate-300');
+      });
+
+      const activeNav = document.getElementById(`nav-${tabId}`);
+      if (activeNav) {
+        activeNav.classList.remove('text-slate-300');
+        activeNav.classList.add('text-cyber-cyan', 'bg-slate-800/80');
+      }
+
+      // Close mobile dropdown if open
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        toggleMobileMenu();
+      }
+
+      // Scroll smoothly to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Mobile Navigation Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('menu-icon');
+      if (menu) {
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+          icon.className = 'fa-solid fa-bars text-xl';
+        } else {
+          icon.className = 'fa-solid fa-xmark text-xl';
+        }
+      }
+    }
+
+    // Modal Control Logic
+    function openPreviewModal(toolId) {
+      const modal = document.getElementById('preview-modal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) modal.classList.add('hidden');
+    }
+
+    // Purchase Trigger Logic
+    function triggerPurchase(planName, price) {
+      document.getElementById('purchase-plan-title').innerText = planName;
+      document.getElementById('summary-plan-name').innerText = planName;
+      document.getElementById('summary-plan-price').innerText = price;
+      
+      const modal = document.getElementById('purchase-modal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function selectPaymentMethod(method) {
+      const cryptoBtn = document.getElementById('pay-crypto');
+      const cardBtn = document.getElementById('pay-card');
+
+      if (method === 'crypto') {
+        cryptoBtn.className = 'pay-method-btn active p-3 rounded-xl bg-slate-900 border-2 border-cyber-cyan text-left space-y-1 transition-all';
+        cardBtn.className = 'pay-method-btn p-3 rounded-xl bg-slate-900 border border-slate-800 text-left space-y-1 hover:border-slate-700 transition-all';
+      } else {
+        cardBtn.className = 'pay-method-btn active p-3 rounded-xl bg-slate-900 border-2 border-cyber-cyan text-left space-y-1 transition-all';
+        cryptoBtn.className = 'pay-method-btn p-3 rounded-xl bg-slate-900 border border-slate-800 text-left space-y-1 hover:border-slate-700 transition-all';
+      }
+    }
+
+    function processPurchase() {
+      alert("Redirecting to encrypted payment gateway... Please check your screen after completion for your instant key!");
+      closeModal('purchase-modal');
+    }
+
+    // Free Download Handler
+    function downloadFreePanel() {
+      alert("Preparing 4FLAG Lite Free Panel download link... File size: 14.2 MB");
+    }
+
+    function downloadEmulator(name) {
+      alert(`Starting download for pre-configured build: ${name}`);
+    }
+
+    function playVideo(id) {
+      alert("Loading HD video setup tutorial...");
+    }
+
+    function openSupportChat() {
+      alert("Opening WhatsApp support channel with 4FLAG technician...");
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(element) {
+      const nextP = element.nextElementSibling;
+      const icon = element.querySelector('i');
+      if (nextP.classList.contains('hidden')) {
+        nextP.classList.remove('hidden');
+        icon.className = 'fa-solid fa-chevron-up text-xs';
+      } else {
+        nextP.classList.add('hidden');
+        icon.className = 'fa-solid fa-chevron-down text-xs';
+      }
+    }
+
+   
+
+    let salesIndex = 0;
+
+    function showSalesPopup() {
+      const popup = document.getElementById('sales-popup');
+      const salesText = document.getElementById('sales-text');
+      const salesTime = document.getElementById('sales-time');
+
+      if (!popup || !salesText || !salesTime) return;
+
+      const current = salesData[salesIndex];
+      salesText.innerHTML = `Someone from <strong class="text-cyber-cyan">${current.country}</strong> bought ${current.product}`;
+      salesTime.innerHTML = `<i class="fa-solid fa-clock text-slate-500"></i> ${current.time}`;
+
+      // Slide In
+      popup.classList.remove('hidden', 'translate-y-10', 'opacity-0');
+      popup.classList.add('translate-y-0', 'opacity-100');
+
+      // Hide after 5 seconds
+      setTimeout(() => {
+        popup.classList.remove('translate-y-0', 'opacity-100');
+        popup.classList.add('translate-y-10', 'opacity-0');
+      }, 5000);
+
+      salesIndex = (salesIndex + 1) % salesData.length;
+    }
+
+    // Trigger sales popup periodically
+    setTimeout(showSalesPopup, 3000);
+    setInterval(showSalesPopup, 16000);
+  </script>
+</body>
+</html>
